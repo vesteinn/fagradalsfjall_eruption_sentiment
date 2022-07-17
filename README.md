@@ -56,7 +56,16 @@ As there are many ways to fetch tweets by ID, authentication is necessary and fo
 
 ## How to reproduce
 
-Make sure you have the necessary libraries set up, including CUDA if you want to train and evaluate on GPU. Then run
+Make sure you have the necessary libraries set up, including CUDA if you want to train and evaluate on GPU.
+
+```bash
+conda create --name fagra python=3.8  # if you want to set up a new conda environment
+conda activate fagra
+#  Or follow the recommended setup for torch at https://pytorch.org/get-started/locally/
+pip install torch transformers datasets sklearn
+```
+
+Then run
 
 ```bash
 cd fagradals

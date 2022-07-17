@@ -22,7 +22,7 @@ dataset = load_dataset('json', data_files=datafiles)
 
 
 # modify if data is already masked
-IS_MASKED = True
+IS_MASKED = False
 if not IS_MASKED:
     dataset = dataset.filter(check_keyword)
     dataset = dataset.map(mask_keywords)
