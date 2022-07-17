@@ -11,11 +11,11 @@ See below for results and further details.
 
 1. Fetch data using the Twitter API or hydrate using provided information
 2. Filter data to confirm keywords are present as the API does not always return tweets with the keywords.
-3. Train a sentiment analysis model capable of labeling Icelandic, a bi-lingual model trained on English sentiment data is used.
-4. Modify the model to support neutral labels
-5. Fine tune the model on the labeled data with keywords masked out to prevent overfitting on the words themselves
-6. Label data with the keywords masked out
-7. Summarize labeled data by week for easy analysis
+3. Train or use a sentiment analysis model capable of labeling Icelandic, a bi-lingual model trained on English sentiment data is used.
+4. If the model only support positive and negative sentiment, modify the model to support neutral labels, this is the case here.
+5. Fine tune the model on the labeled data with keywords masked out to prevent overfitting on the words themselves.
+6. Label all data with the keywords masked out to see the full picture.
+7. Summarize labeled data by week to draw histogram and for further analysis.
 
 ## The data
 
